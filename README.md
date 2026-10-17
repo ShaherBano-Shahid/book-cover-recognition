@@ -75,6 +75,15 @@ These results are from the recorded 5,700-image test split. HOG + SVM uses edge 
 
 The Basic CNN and the two original MobileNetV2 models were imported from an existing project. Their original training split files were not provided, so overlap with the evaluation data could not be independently checked. The SVM was trained in this project with checked split separation.
 
+### Image score and test accuracy
+
+A score above 50% or 90% on one uploaded cover is different from the test accuracy listed in the table.
+
+- **Image score:** The probability a CNN model assigns to its predicted genre for that one cover. For example, it may give a cookbook cover a score of 95% for Cookbooks, Food & Wine.
+- **Test accuracy:** The percentage of correct predictions across the whole test set. An accuracy of 27.11% means about 27 out of every 100 test covers were classified correctly.
+
+A 95% score on one image does not mean the model has 95% overall accuracy. A high image score can still be wrong. HOG + SVM uses a decision score, which can be negative and is not a percentage.
+
 The `results` folder includes evaluation metrics, classification reports, confusion matrices, and comparison charts. To evaluate all saved models again:
 
 ```powershell
@@ -109,6 +118,6 @@ The tests use small synthetic images and do not overwrite the real dataset or sa
 
 ## Current limitations
 
-The models use visual features. There is no separate OCR step to read the title. Similar covers can belong to different genres, so incorrect predictions are still common. A displayed probability is a model score for one cover, not the overall accuracy. SVM scores are not percentages.
+The models use visual features. There is no separate OCR step to read the title. Similar covers can belong to different genres, so incorrect predictions are still common.
 
 The dataset, trained models, temporary files, and virtual environment are excluded from GitHub. The source code and small evaluation reports are included.
