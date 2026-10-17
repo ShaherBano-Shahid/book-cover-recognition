@@ -1,0 +1,18 @@
+{
+  "model": "cnn",
+  "dataset_id": "7ee825bf8d1e3f54ee21fbe21eb4aab9edb889590dc1c9567b1c244623fe5884",
+  "split": "test",
+  "images": 5700,
+  "origin": "imported",
+  "independent_test_verified": false,
+  "evaluation_note": "Training/test separation is documented in the supplied report, but original split files were not supplied.",
+  "accuracy": 0.09771929824561404,
+  "top3_accuracy": 0.23649122807017545,
+  "macro_precision": 0.08425290490881031,
+  "macro_recall": 0.09771929824561403,
+  "macro_f1": 0.07369206930386711,
+  "mean_inference_ms": 24.354253999190405,
+  "latency_samples": 50,
+  "latency_scope": "Warm model; includes image loading and preprocessing",
+  "test_images": 5700
+}

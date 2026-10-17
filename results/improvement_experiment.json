@@ -1,0 +1,117 @@
+{
+  "source_model": "mobilenet_tuned",
+  "training_images": 6000,
+  "validation_images": 5128,
+  "training_method": "Frozen CNN features, balanced training sample, retrained classifier",
+  "baseline_validation": {
+    "accuracy": 0.3233229329173167,
+    "macro_f1": 0.30748247413503144
+  },
+  "trials": [
+    {
+      "head": "linear",
+      "blend_with_original": false,
+      "accuracy": 0.32722308892355695,
+      "macro_f1": 0.3132998716070929
+    },
+    {
+      "head": "linear",
+      "blend_with_original": true,
+      "accuracy": 0.32624804992199685,
+      "macro_f1": 0.31137449685614516
+    },
+    {
+      "head": "hidden",
+      "blend_with_original": false,
+      "accuracy": 0.2591653666146646,
+      "macro_f1": 0.24985961298246132
+    },
+    {
+      "head": "hidden",
+      "blend_with_original": true,
+      "accuracy": 0.30518720748829953,
+      "macro_f1": 0.29029474001272326
+    }
+  ],
+  "selected": {
+    "head": "linear",
+    "blend_with_original": false,
+    "accuracy": 0.32722308892355695,
+    "macro_f1": 0.3132998716070929
+  },
+  "promoted": true,
+  "test_accuracy_before": 0.26859649122807017,
+  "test_accuracy_after": 0.2710526315789474,
+  "test_macro_f1_before": 0.2536816118021473,
+  "test_macro_f1_after": 0.26055896512455284,
+  "additional_classifier_check": {
+    "head": "lda",
+    "blend_with_original": false,
+    "accuracy": 0.2673556942277691,
+    "macro_f1": 0.2631685542985115,
+    "elapsed_seconds": 5.861655900000187
+  },
+  "additional_blend_checks": [
+    {
+      "head": "linear",
+      "new_head_weight": 0.1,
+      "accuracy": 0.32624804992199685,
+      "macro_f1": 0.310601044571394
+    },
+    {
+      "head": "linear",
+      "new_head_weight": 0.25,
+      "accuracy": 0.328393135725429,
+      "macro_f1": 0.3127170210753809
+    },
+    {
+      "head": "linear",
+      "new_head_weight": 0.5,
+      "accuracy": 0.32624804992199685,
+      "macro_f1": 0.31137449685614516
+    },
+    {
+      "head": "linear",
+      "new_head_weight": 0.75,
+      "accuracy": 0.327808112324493,
+      "macro_f1": 0.3127719077955861
+    },
+    {
+      "head": "linear",
+      "new_head_weight": 1.0,
+      "accuracy": 0.32722308892355695,
+      "macro_f1": 0.3132998716070929
+    },
+    {
+      "head": "lda",
+      "new_head_weight": 0.1,
+      "accuracy": 0.3205928237129485,
+      "macro_f1": 0.3066509307958778
+    },
+    {
+      "head": "lda",
+      "new_head_weight": 0.25,
+      "accuracy": 0.2995319812792512,
+      "macro_f1": 0.29058372172566554
+    },
+    {
+      "head": "lda",
+      "new_head_weight": 0.5,
+      "accuracy": 0.2763260530421217,
+      "macro_f1": 0.27088473960574255
+    },
+    {
+      "head": "lda",
+      "new_head_weight": 0.75,
+      "accuracy": 0.26794071762870514,
+      "macro_f1": 0.2632977660876142
+    },
+    {
+      "head": "lda",
+      "new_head_weight": 1.0,
+      "accuracy": 0.2673556942277691,
+      "macro_f1": 0.2631685542985115
+    }
+  ],
+  "manual_test_note": "Three reported romance/science-fiction examples remain incorrectly classified; two cookbook examples remain correct."
+}

@@ -1,0 +1,30 @@
+{
+  "image_errors": [],
+  "official_train": 51300,
+  "official_test": 5700,
+  "excluded_training_files": [
+    "B00ENP6L0Q.jpg",
+    "B00ENP6LEW.jpg",
+    "1783294507.jpg",
+    "B00KX52ZBE.jpg",
+    "1423583485.jpg",
+    "0817625186.jpg",
+    "B007K5BB1A.jpg",
+    "0316218995.jpg",
+    "1423508246.jpg",
+    "0112904807.jpg",
+    "B002WLS7SM.jpg",
+    "0824779207.jpg",
+    "0130891371.jpg",
+    "1783299711.jpg",
+    "3867876398.jpg",
+    "1554074681.jpg",
+    "B00EJ0MAZU.jpg",
+    "1613281153.jpg",
+    "B00S9BQBSW.jpg",
+    "0316219010.jpg",
+    "1610727916.jpg",
+    "B00S9BRACI.jpg"
+  ],
+  "duplicate_test_covers": 1
+}

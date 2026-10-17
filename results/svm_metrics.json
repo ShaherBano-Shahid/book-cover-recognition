@@ -1,0 +1,18 @@
+{
+  "model": "svm",
+  "dataset_id": "7ee825bf8d1e3f54ee21fbe21eb4aab9edb889590dc1c9567b1c244623fe5884",
+  "split": "test",
+  "images": 5700,
+  "origin": "locally_trained",
+  "independent_test_verified": true,
+  "evaluation_note": "Locally trained with prepared splits and duplicate checks.",
+  "accuracy": 0.11543859649122808,
+  "top3_accuracy": 0.23894736842105263,
+  "macro_precision": 0.09333987839179429,
+  "macro_recall": 0.11543859649122808,
+  "macro_f1": 0.09721004352481352,
+  "mean_inference_ms": 9.05916000061552,
+  "latency_samples": 50,
+  "latency_scope": "Warm model; includes image loading and preprocessing",
+  "test_images": 5700
+}

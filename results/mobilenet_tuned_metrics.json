@@ -1,0 +1,18 @@
+{
+  "model": "mobilenet_tuned",
+  "dataset_id": "7ee825bf8d1e3f54ee21fbe21eb4aab9edb889590dc1c9567b1c244623fe5884",
+  "split": "test",
+  "images": 5700,
+  "origin": "imported",
+  "independent_test_verified": false,
+  "evaluation_note": "Training/test separation is documented in the supplied report, but original split files were not supplied.",
+  "accuracy": 0.26859649122807017,
+  "top3_accuracy": 0.4668421052631579,
+  "macro_precision": 0.2557011731550337,
+  "macro_recall": 0.2685964912280702,
+  "macro_f1": 0.2536816118021473,
+  "mean_inference_ms": 355.42200199939543,
+  "latency_samples": 50,
+  "latency_scope": "Warm model; includes image loading and preprocessing",
+  "test_images": 5700
+}
